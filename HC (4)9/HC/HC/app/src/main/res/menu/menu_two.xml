@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_one"
+        android:orderInCategory="100"
+        android:title="打开蓝牙" />
+    <item
+        android:id="@+id/item_two"
+        android:orderInCategory="100"
+        android:title="搜索设备"/>
+    <item
+        android:id="@+id/item_three"
+        android:orderInCategory="100"
+        android:title="断开连接"/>
+
+</menu>

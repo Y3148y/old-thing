@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="209dp"-->
+<!--    android:layout_height="341.5dp"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:id="@+id/map1"-->
+<!--    android:padding="0dp"-->
+<!--    android:background="@drawable/dianweiji">-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/map1"
+        android:layout_width="200dp"
+        android:layout_height="280dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="81dp"
+        android:src="@drawable/dianweiji" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="66.75dp"
+        android:layout_height="38.25dp"
+        android:layout_alignStart="@+id/map1"
+
+        android:layout_alignTop="@+id/map1"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/an1" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="66.75dp"
+        android:layout_height="38.25dp"
+
+        android:layout_alignTop="@+id/map1"
+
+
+        android:layout_alignEnd="@+id/map1"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/an2"
+        android:foreground="?selectableItemBackground" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="66.75dp"
+        android:layout_height="38.25dp"
+        android:layout_below="@+id/btn1"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/map1"
+
+
+        android:layout_marginStart="28dp"
+        android:background="@drawable/an3"
+        android:foreground="?selectableItemBackground" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="66.75dp"
+        android:layout_height="38.25dp"
+        android:layout_below="@+id/btn2"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignEnd="@+id/map1"
+
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/an4"
+        android:foreground="?selectableItemBackground" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="66.75dp"
+        android:layout_height="38.25dp"
+        android:layout_below="@+id/btn3"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/map1"
+
+
+        android:layout_marginStart="28dp"
+        android:background="@drawable/an5"
+        android:foreground="?selectableItemBackground" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="66.75dp"
+        android:layout_height="38.25dp"
+        android:layout_below="@+id/btn4"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignEnd="@+id/map1"
+
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/an6"
+        android:foreground="?selectableItemBackground" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="66.75dp"
+        android:layout_height="38.25dp"
+        android:layout_below="@+id/btn5"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/map1"
+
+        android:layout_marginStart="28dp"
+        android:background="@drawable/an7"
+        android:foreground="?selectableItemBackground" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="66.75dp"
+        android:layout_height="38.25dp"
+        android:layout_below="@+id/btn6"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignEnd="@+id/map1"
+
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/an0"
+        android:foreground="?selectableItemBackground" />
+
+</RelativeLayout>

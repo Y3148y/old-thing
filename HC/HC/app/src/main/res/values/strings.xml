@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Example2</string>
+    <string name="n1">积木1</string>
+    <string name="n2">积木2</string>
+    <string name="n3">积木3</string>
+    <string name="n4">积木4</string>
+    <string name="n5">积木5</string>
+    <string name="bt_find">搜索蓝牙</string>
+    <string name="string_path0">路径0</string>
+    <string name="string_path1">路径1</string>
+    <string name="string_path2">路径2</string>
+    <string name="string_path3">路径3</string>
+
+</resources>

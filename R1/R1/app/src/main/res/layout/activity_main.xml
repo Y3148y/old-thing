@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rocker="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linearLayout"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:layout_marginEnd="32dp"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/button1"-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_gravity="right"-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:background="@color/purple_200"-->
+    <!--            android:text="@string/n1" />-->
+
+
+    <!--        <Button-->
+    <!--            android:id="@+id/button2"-->
+    <!--            android:layout_width="150dp"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_gravity="right"-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:background="@color/purple_200"-->
+    <!--            android:text="@string/n2" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/button3"-->
+    <!--            android:layout_width="200dp"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_gravity="right"-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:background="@color/purple_200"-->
+    <!--            android:text="@string/n3" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/button4"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_gravity="right"-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:background="@color/purple_200"-->
+    <!--            android:text="@string/n4" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/button5"-->
+    <!--            android:layout_width="300dp"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_gravity="right"-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:background="@color/purple_200"-->
+    <!--            android:text="@string/n5" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_reset"-->
+    <!--            android:layout_width="300dp"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_gravity="right"-->
+    <!--            android:background="@color/red"-->
+    <!--            android:text="夹具复位"-->
+    <!--            android:textSize="25sp" />-->
+    <!--    </LinearLayout>-->
+    <include
+        android:id="@+id/activity_tower"
+        layout="@layout/activity_tower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!--    这个Button为gone，暂且不用了-->
+    <Button
+        android:id="@+id/btn_claw_gone"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/icon_26"
+        android:rotation="-40"
+        android:text="夹具闭合"
+        android:textSize="50sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <include
+        android:id="@+id/activity_claw"
+        layout="@layout/activity_claw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/activity_speed_set"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <include
+        android:id="@+id/activity_path"
+        layout="@layout/activity_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="145dp"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:text="当前偏航角：2"-->
+    <!--        android:textColor="#F00000"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        android:visibility="gone"/>-->
+
+
+
+    <com.example.r1.MyRockerView
+        android:id="@+id/myRockerView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        rocker:areaBackground="@mipmap/rocker_base"
+        rocker:rockerBackground="@mipmap/rocker"
+        rocker:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE"
+        rocker:rockerScale="0.5"
+        rocker:rockerSpeedLevel="10"
+        rocker:shh="100" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:focusableInTouchMode="true"
+        android:scrollbarSize="10dp"
+        android:scrollbarThumbVertical="@color/red"
+        android:scrollbars="horizontal"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="32sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <include
+        android:id="@+id/activity_mode"
+        layout="@layout/activity_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView1" />
+
+    <include
+        android:id="@+id/activity_speed_set"
+        layout="@layout/activity_speed_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_center"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/myRockerView2"
+        app:layout_constraintStart_toStartOf="@+id/myRockerView2" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:max="180"
+        android:maxHeight="30dp"
+        android:min="-180"
+        android:minHeight="30dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/sb_bar"
+        android:rotation="0"
+        android:scaleX="2"
+        android:thumb="@drawable/sb_thumb"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/myRockerView3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进度值"
+        android:textColor="@color/red"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/seekBar1"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar1"
+        app:layout_constraintStart_toStartOf="@id/seekBar1" />
+
+    <TextView
+        android:id="@+id/tv_angle_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:shadowColor="@color/red"
+        android:shadowRadius="3.0"
+        android:text="当前角度为："
+        android:textColor="@color/darkblue"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_angle_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_angle_1" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout_BluetoothList"
+        android:layout_width="209dp"
+        android:layout_height="301.5dp"
+        android:defaultFocusHighlightEnabled="true"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:orientation="vertical"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </RelativeLayout>
+
+
+<!--    <com.example.example2.MyRockerView-->
+<!--        android:id="@+id/myRockerView1"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:layout_marginStart="68dp"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/myRockerView3"-->
+
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/activity_mode"-->
+<!--        app:layout_constraintVertical_bias="1.0"-->
+<!--        rocker:areaBackground="@mipmap/rocker_base"-->
+<!--        rocker:rockerBackground="@mipmap/rocker"-->
+<!--        rocker:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE"-->
+<!--        rocker:rockerScale="0.5"-->
+<!--        rocker:rockerSpeedLevel="10" />-->
+
+    <com.example.r1.MyRockerView
+        android:id="@+id/myRockerView3"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        rocker:areaBackground="@mipmap/rocker_base"
+        rocker:rockerBackground="@mipmap/rocker"
+        rocker:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE"
+        rocker:rockerScale="0.5"
+        rocker:rockerSpeedLevel="10" />
+
+    <Button
+        android:id="@+id/btn_path1"
+        style="@style/myFont"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="强停"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_add1"
+        style="@style/myFont"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+
+        android:text="@string/n5"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/activity_mode" />
+
+
+
+
+
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="91dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/change"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/map2"
+        layout="@layout/map2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+         />
+    <include
+        android:id="@+id/map1"
+        layout="@layout/map1"
+        android:layout_width="700dp"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/seekbar02"
+        android:layout_width="200dp"
+        android:layout_height="63dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="600dp"
+        android:layout_marginBottom="152dp"
+        android:foreground="?selectableItemBackground"
+        android:rotation="270"
+        android:stepSize="1"
+        android:value="0"
+        android:valueFrom="0"
+        android:valueTo="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:tickVisible="true"
+        app:trackHeight="9dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/begin"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="528dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/begin"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="536dp"
+        android:layout_marginTop="208dp"
+        android:background="@drawable/stopp"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/touqiu"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="536dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/touqiu"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/yunqiu"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="468dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/yun_qiu"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chuanqiu"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="588dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/chuan_qiu"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/jieqiu"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="536dp"
+        android:layout_marginTop="216dp"
+        android:background="@drawable/jie_qiu"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@drawable/menu"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/reset"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/reset2"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/reset"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/left90"-->
+    <!--        android:layout_width="55dp"-->
+    <!--        android:layout_height="53dp"-->
+    <!--        android:layout_marginTop="240dp"-->
+    <!--        android:background="@drawable/jiantou1"-->
+    <!--        android:foreground="?selectableItemBackground"-->
+
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/right90"-->
+    <!--        android:layout_width="55dp"-->
+    <!--        android:layout_height="53dp"-->
+    <!--        android:layout_marginTop="240dp"-->
+    <!--        android:background="@drawable/jiantou"-->
+    <!--        android:foreground="?selectableItemBackground"-->
+
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.15"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/down90"-->
+    <!--        android:layout_width="56dp"-->
+    <!--        android:layout_height="46dp"-->
+    <!--        android:layout_marginTop="280dp"-->
+    <!--        android:background="@drawable/jiantou2"-->
+    <!--        android:foreground="?selectableItemBackground"-->
+
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.077"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/up90"-->
+    <!--        android:layout_width="56dp"-->
+    <!--        android:layout_height="46dp"-->
+    <!--        android:layout_marginTop="200dp"-->
+    <!--        android:background="@drawable/jiantou3"-->
+    <!--        android:foreground="?selectableItemBackground"-->
+
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.077"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

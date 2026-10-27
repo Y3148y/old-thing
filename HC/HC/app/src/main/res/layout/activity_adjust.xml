@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdjustActivity">
+
+    <ImageButton
+        android:id="@+id/btn_seekbar1_minus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/triangle_left"
+        android:contentDescription="减少"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar1"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar1"
+        app:layout_constraintTop_toTopOf="@+id/seekBar1" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="300dp"
+        android:layout_height="32dp"
+        android:max="350"
+        android:min="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/seekbar_background"
+        android:thumb="@drawable/sb_thumb"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_60"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_60"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_horizontal_60"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_50"
+        />
+
+    <TextView
+        android:id="@+id/tv_label_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="4dp"
+        android:text="t"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_seekbar1_minus"
+        app:layout_constraintEnd_toStartOf="@+id/btn_seekbar1_minus"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_60"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_60"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_horizontal_60"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_seekbar1_plus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/triangle_right"
+        android:contentDescription="增加"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar1"
+        app:layout_constraintStart_toEndOf="@+id/seekBar1"
+        app:layout_constraintTop_toTopOf="@+id/seekBar1" />
+
+
+
+    <TextView
+        android:id="@+id/tv_seekbar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="100"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_label_a"
+        app:layout_constraintEnd_toStartOf="@+id/tv_label_a"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_60"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_60"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_horizontal_60"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_seekbar2_minus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/triangle_left"
+        android:contentDescription="减少"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar2"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar2"
+        app:layout_constraintTop_toTopOf="@+id/seekBar2" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="280dp"
+        android:layout_height="32dp"
+        android:max="200"
+        android:min="140"
+        android:progress="140"
+        android:progressDrawable="@drawable/seekbar_background"
+        android:thumb="@drawable/sb_thumb"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_50"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_50"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_horizontal_50"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_50" />
+
+    <ImageButton
+        android:id="@+id/btn_seekbar2_plus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/triangle_right"
+        android:contentDescription="增加"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar2"
+        app:layout_constraintStart_toEndOf="@+id/seekBar2"
+        app:layout_constraintTop_toTopOf="@+id/seekBar2" />
+
+
+    <TextView
+        android:id="@+id/tv_seekbar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="140"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_label_p"
+        app:layout_constraintEnd_toStartOf="@+id/tv_label_p"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_50"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_50"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_horizontal_50"/>
+
+    <ImageButton
+        android:id="@+id/btn_seekbar3_minus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/triangle_left"
+        android:contentDescription="减少"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar3"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar3"
+        app:layout_constraintTop_toTopOf="@+id/seekBar3" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="240dp"
+        android:layout_height="32dp"
+        android:max="70"
+        android:min="0"
+        android:progress="0"
+        android:progressDrawable="@drawable/seekbar_background"
+        android:thumb="@drawable/sb_thumb"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_40"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_40"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_horizontal_40"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_50"/>
+
+    <ImageButton
+        android:id="@+id/btn_seekbar3_plus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/triangle_right"
+        android:contentDescription="增加"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar3"
+        app:layout_constraintStart_toEndOf="@+id/seekBar3"
+        app:layout_constraintTop_toTopOf="@+id/seekBar3" />
+
+
+    <TextView
+        android:id="@+id/tv_seekbar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_label_a"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_40"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_40"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_horizontal_40"
+        app:layout_constraintEnd_toStartOf="@+id/tv_label_a"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_label_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="p"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_seekbar2_minus"
+        app:layout_constraintEnd_toStartOf="@+id/btn_seekbar2_minus"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_50"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_50"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_horizontal_50"/>
+
+    <TextView
+        android:id="@+id/tv_label_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="97dp"
+        android:text="a"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_seekbar3_minus"
+        app:layout_constraintEnd_toStartOf="@+id/btn_seekbar3_minus"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_40"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_40"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_horizontal_40"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+
+
+
+    <!-- 复位按键组 - 居中布局，使用百分比定位提高适配性 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="90dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="182dp" />
+
+
+    <Button
+        android:id="@+id/btn_reset_upper"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="上层复位"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_center"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_vertical_center"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_center" />
+
+    <Button
+        android:id="@+id/btn_reset_chassis"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="底盘复位"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_reset_upper"
+        app:layout_constraintEnd_toEndOf="@+id/btn_reset_upper"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_reset_upper" />
+
+    <Button
+        android:id="@+id/btn_reset_mechanical"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="机械复位"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_reset_upper"
+        app:layout_constraintStart_toStartOf="@+id/btn_reset_upper"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_center" />
+
+    <Button
+        android:id="@+id/btn_reset_m2006"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="M2006复位"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_reset_mechanical"
+        app:layout_constraintStart_toStartOf="@+id/btn_reset_mechanical"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reset_mechanical" />
+
+    <!-- 返回MainActivity的按钮 -->
+    <Button
+        android:id="@+id/btn_back_to_main"
+        android:text="返回主页"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/purple"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2">
+
+
+    </GridLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnShenchu"-->
+<!--        android:layout_width="54dp"-->
+<!--        android:layout_height="57dp"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="93dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:background="@drawable/shenchu" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnQuYang"-->
+<!--        android:layout_width="57dp"-->
+<!--        android:layout_height="53dp"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="84dp"-->
+<!--        android:background="@drawable/throwout" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Touzhi"-->
+<!--        android:layout_width="57dp"-->
+<!--        android:layout_height="53dp"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="93dp"-->
+<!--        android:layout_marginTop="85dp"-->
+<!--        android:background="@drawable/point" />-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/Purple1"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="192dp"-->
+<!--        android:layout_marginTop="17dp"-->
+<!--        android:background="@drawable/purple" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Purple2"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="279dp"-->
+<!--        android:layout_marginTop="83dp"-->
+<!--        android:background="@drawable/purple" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Purple3"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="366dp"-->
+<!--        android:layout_marginTop="19dp"-->
+<!--        android:background="@drawable/purple" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Purple4"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="453dp"-->
+<!--        android:layout_marginTop="83dp"-->
+<!--        android:background="@drawable/purple" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Purple5"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="540dp"-->
+<!--        android:layout_marginTop="21dp"-->
+<!--        android:background="@drawable/purple" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Purple6"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="627dp"-->
+<!--        android:layout_marginTop="85dp"-->
+<!--        android:background="@drawable/purple" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Red1"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="192dp"-->
+<!--        android:layout_marginTop="85dp"-->
+<!--        android:background="@drawable/red_3" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Red2"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="279dp"-->
+<!--        android:layout_marginTop="21dp"-->
+<!--        android:background="@drawable/red_3" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Red3"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="366dp"-->
+<!--        android:layout_marginTop="85dp"-->
+<!--        android:background="@drawable/red_3" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Red4"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="453dp"-->
+<!--        android:layout_marginTop="21dp"-->
+<!--        android:background="@drawable/red_3" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Red5"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="540dp"-->
+<!--        android:layout_marginTop="85dp"-->
+<!--        android:background="@drawable/red_3" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Red6"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="627dp"-->
+<!--        android:layout_marginTop="21dp"-->
+<!--        android:background="@drawable/red_3" />-->
+
+    <Button
+        android:id="@+id/Btn_Connection"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/icon_26"
+        android:rotation="90" />
+
+
+
+</RelativeLayout>

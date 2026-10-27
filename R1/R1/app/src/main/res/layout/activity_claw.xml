@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_claw"
+            android:background="@color/darkslategrey"
+            android:layout_width="75dp"
+            android:layout_height="82dp"
+            android:textColor="@color/white"
+            android:text="夹具\n合"
+            android:textSize="15sp"
+            android:rotation="-0"
+            android:layout_marginBottom="20dp" />
+        <Button
+            android:id="@+id/btn_claw_overturn"
+            android:layout_gravity="end"
+            android:background="@color/darkslategrey"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:text="翻转"
+            android:singleLine="false"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:rotation="-0" />
+    </LinearLayout>
+
+</RelativeLayout>

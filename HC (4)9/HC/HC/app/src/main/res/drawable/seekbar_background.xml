@@ -1,0 +1,50 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 轨道背景 -->
+    <item android:id="@android:id/background"
+        android:gravity="center_vertical">
+        <shape android:layout_width="match_parent">
+            <solid android:color="#FFFFD042"/>
+            <size android:height="12dp"/>
+        </shape>
+    </item>
+    <!-- 进度条前景 -->
+    <item android:id="@android:id/progress"
+        android:gravity="center_vertical">
+        <scale android:scaleWidth="100%">
+            <shape>
+                <solid android:color="#FF96E850" />
+            </shape>
+        </scale>
+    </item>
+
+    <!-- 左边标记点 -->
+<!--    <item-->
+<!--        android:width="22dp"-->
+<!--        android:height="22dp"-->
+<!--        android:gravity="left|center_vertical"-->
+<!--        >-->
+<!--        <shape android:shape="oval">-->
+<!--            <solid android:color="#0097A7" />-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--    &lt;!&ndash; 中间标记点 &ndash;&gt;-->
+<!--    <item-->
+<!--        android:width="22dp"-->
+<!--        android:height="22dp"-->
+<!--        android:gravity="center|center_vertical">-->
+<!--        <shape android:shape="oval">-->
+<!--            <solid android:color="#0097A7" />-->
+<!--        </shape>-->
+<!--    </item>-->
+
+<!--    &lt;!&ndash; 右边标记点 &ndash;&gt;-->
+<!--    <item-->
+<!--        android:width="22dp"-->
+<!--        android:height="22dp"-->
+<!--        android:gravity="right|center_vertical"-->
+<!--        >-->
+<!--        <shape android:shape="oval">-->
+<!--            <solid android:color="#0097A7 " />-->
+<!--        </shape>-->
+<!--    </item>-->
+</layer-list>

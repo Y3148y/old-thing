@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_1"
+        android:orderInCategory="100"
+        android:title="打开蓝牙"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/item_2"
+        android:orderInCategory="100"
+        android:title="搜索设备"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/item_3"
+        android:orderInCategory="100"
+        android:title="断开连接"
+        app:showAsAction="never"/>
+
+<!--    <item android:id="@+id/option_normal_4"-->
+<!--        android:title="普通菜单4"-->
+<!--        app:showAsAction="never"/>-->
+</menu>
